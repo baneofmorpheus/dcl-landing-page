@@ -1,0 +1,45 @@
+.dcl-services-container {
+  min-height: 60rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1.1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "one one . . . . . ."
+    "one one . two two . . ."
+    "one one . two two . three three"
+    ". . . two two . three three"
+    ". . . . . . three three";
+}
+.dcl-services-container-reversed {
+  min-height: 60rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1.1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . . . . three_reversed three_reversed"
+    ". . . two_reversed two_reversed . three_reversed three_reversed"
+    "one_reversed one_reversed . two_reversed two_reversed . three_reversed three_reversed"
+    "one_reversed one_reversed . two_reversed two_reversed . . ."
+    "one_reversed one_reversed . . . . . .";
+}
+
+.dcl-services-container-three {
+  grid-area: three;
+}
+.dcl-services-container-two {
+  grid-area: two;
+}
+.dcl-services-container-one {
+  grid-area: one;
+}
+.dcl-services-container-three-reversed {
+  grid-area: three_reversed;
+}
+.dcl-services-container-two-reversed {
+  grid-area: two_reversed;
+}
+.dcl-services-container-one-reversed {
+  grid-area: one_reversed;
+}
