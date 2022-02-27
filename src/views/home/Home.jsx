@@ -5,7 +5,7 @@ import heroImage from "../../assets/images/vehicle.png";
 import mechanicImage from "../../assets/images/mechanic.jpeg";
 import mechanic2Image from "../../assets/images/mechanic2.jpeg";
 import mechanic3Image from "../../assets/images/mechanic3.jpeg";
-import "./style.css";
+import "./style.scss";
 
 function Home() {
   return (
