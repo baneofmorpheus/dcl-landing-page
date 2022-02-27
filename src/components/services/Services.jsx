@@ -3,6 +3,11 @@ import { Fragment } from "react";
 import service1Image from "../../assets/images/service1.jpg";
 import service2Image from "../../assets/images/service2.jpg";
 import service3Image from "../../assets/images/service3.jpg";
+import consultationImage from "../../assets/images/consultation.jpg";
+import towImage from "../../assets/images/tow.jpg";
+import interstateImage from "../../assets/images/interstate.jpg";
+import purchaseImage from "../../assets/images/purchase.jpg";
+import pickupImage from "../../assets/images/pickup.jpg";
 import "./style.css";
 
 function Services() {
@@ -14,55 +19,103 @@ function Services() {
         </Col>
         <Col xs="12 " className="mb-5">
           <div className="dcl-services-container h-100 w-100">
-            <div className="dcl-services-container-one ">
-              <p className="text-center">Autombile Diagnostics</p>
-              <img alt="" className="img-fluid h-100" src={service1Image} />
+            <div className="dcl-services-child ">
+              <p className="text-center">Automobile Diagnostics</p>
+              <div>
+                <img
+                  alt=""
+                  className="img-fluid h-100 w-100"
+                  src={service1Image}
+                />
+              </div>
             </div>
-            <div className="dcl-services-container-two ">
+            <div className="dcl-services-child ">
               <p className="text-center">Spraying and Controlled Bodywork</p>
 
-              <img alt="" className="img-fluid h-100" src={service2Image} />
+              <div>
+                <img
+                  alt=""
+                  className="img-fluid h-100 w-100"
+                  src={service2Image}
+                />
+              </div>
             </div>
-            <div className="dcl-services-container-three ">
+            <div className="dcl-services-child ">
               <p className="text-center">Automobile Servicing</p>
 
-              <img alt="" className="img-fluid h-100" src={service3Image} />
+              <div>
+                <img
+                  alt=""
+                  className="img-fluid h-100 w-100"
+                  src={service3Image}
+                />
+              </div>
             </div>
           </div>
         </Col>
         <Col xs="12 " className="mt-5 mb-5">
           <div className="dcl-services-container-reversed h-100 w-100">
-            <div className="dcl-services-container-one-reversed ">
+            <div className="dcl-services-child ">
               <p className="text-center">Towing Service</p>
-              <img alt="" className="img-fluid h-100" src={service1Image} />
+              <div>
+                <img alt="" className="img-fluid h-100 w-100" src={towImage} />
+              </div>
             </div>
-            <div className="dcl-services-container-two-reversed ">
+            <div className="dcl-services-child ">
               <p className="text-center">Interstate Service</p>
 
-              <img alt="" className="img-fluid h-100" src={service2Image} />
+              <div>
+                <img
+                  alt=""
+                  className="img-fluid h-100 w-100"
+                  src={interstateImage}
+                />
+              </div>
             </div>
-            <div className="dcl-services-container-three-reversed ">
+            <div className="dcl-services-child ">
               <p className="text-center">Spare Parts Purchase</p>
-
-              <img alt="" className="img-fluid h-100" src={service3Image} />
+              <div>
+                <img
+                  alt=""
+                  className="img-fluid h-100 w-100"
+                  src={purchaseImage}
+                />
+              </div>
             </div>
           </div>
         </Col>
         <Col xs="12 " className="mt-5 mb-5">
           <div className="dcl-services-container h-100 w-100">
-            <div className="dcl-services-container-one ">
+            <div className="dcl-services-child ">
               <p className="text-center">Interstate Service</p>
-              <img alt="" className="img-fluid h-100" src={service1Image} />
+              <div>
+                <img
+                  alt=""
+                  className="img-fluid h-100 w-100"
+                  src={interstateImage}
+                />
+              </div>
             </div>
-            <div className="dcl-services-container-two ">
+            <div className="dcl-services-child ">
               <p className="text-center">General Consultation</p>
 
-              <img alt="" className="img-fluid h-100" src={service2Image} />
+              <div>
+                <img
+                  alt=""
+                  className="img-fluid h-100 w-100"
+                  src={consultationImage}
+                />
+              </div>
             </div>
-            <div className="dcl-services-container-three ">
+            <div className="dcl-services-child ">
               <p className="text-center">Pick up Service</p>
-
-              <img alt="" className="img-fluid h-100" src={service3Image} />
+              <div>
+                <img
+                  alt=""
+                  className="img-fluid h-100 w-100"
+                  src={pickupImage}
+                />
+              </div>
             </div>
           </div>
         </Col>

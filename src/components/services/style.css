@@ -1,45 +1,33 @@
 .dcl-services-container {
   min-height: 60rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1.1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "one one . . . . . ."
-    "one one . two two . . ."
-    "one one . two two . three three"
-    ". . . two two . three three"
-    ". . . . . . three three";
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding: 1rem;
 }
 .dcl-services-container-reversed {
   min-height: 60rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1.1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    ". . . . . . three_reversed three_reversed"
-    ". . . two_reversed two_reversed . three_reversed three_reversed"
-    "one_reversed one_reversed . two_reversed two_reversed . three_reversed three_reversed"
-    "one_reversed one_reversed . two_reversed two_reversed . . ."
-    "one_reversed one_reversed . . . . . .";
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+.dcl-services-child {
+  height: 70%;
+}
+.dcl-services-child div {
+  height: 92%;
 }
 
-.dcl-services-container-three {
-  grid-area: three;
+.dcl-services-container .dcl-services-child:nth-child(2) {
+  align-self: center;
 }
-.dcl-services-container-two {
-  grid-area: two;
+.dcl-services-container .dcl-services-child:nth-child(3) {
+  align-self: end;
 }
-.dcl-services-container-one {
-  grid-area: one;
+.dcl-services-container-reversed .dcl-services-child:nth-child(2) {
+  align-self: center;
 }
-.dcl-services-container-three-reversed {
-  grid-area: three_reversed;
-}
-.dcl-services-container-two-reversed {
-  grid-area: two_reversed;
-}
-.dcl-services-container-one-reversed {
-  grid-area: one_reversed;
+.dcl-services-container-reversed .dcl-services-child:nth-child(1) {
+  align-self: end;
 }

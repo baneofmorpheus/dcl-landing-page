@@ -1,5 +1,28 @@
 #hero-section {
-  background-image: url("../../assets/images/vehicle.png");
   background-position: right;
   background-repeat: no-repeat;
+  padding-top: 8rem !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  #hero-section {
+    padding-top: 6rem !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #hero-content {
+    background-color: rgba(0, 0, 0, 0.62);
+
+    padding: 2.5rem;
+  }
+  #call-to-action {
+    background-image: url("../../assets/images/vehicle.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #call-to-action p,
+  #call-to-action h1 {
+    color: white !important;
+  }
 }
