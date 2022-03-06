@@ -1,63 +1,17 @@
 import DclNavbar from "../../components/DclNavbar.jsx";
 import Services from "../../components/services/Services.jsx";
-import { Container, Row, Col, Carousel, Button } from "react-bootstrap";
+import Brands from "../../components/brands/Brands.jsx";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import heroImage from "../../assets/images/vehicle.png";
-import mechanicImage from "../../assets/images/mechanic.jpeg";
-import mechanic2Image from "../../assets/images/mechanic2.jpeg";
-import mechanic3Image from "../../assets/images/mechanic3.jpeg";
+
+import "@fortawesome/fontawesome-svg-core/styles.css";
+
 import "./style.scss";
 
 function Home() {
   return (
     <div className="App">
       <DclNavbar />
-
-      {/* <Row className="mt-5 bg-dark">
-        <Col className="mt-5" xs="12">
-          <Carousel>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={mechanicImage}
-                alt="First slide"
-              />
-              <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>
-                  Nulla vitae elit libero, a pharetra augue mollis interdum.
-                </p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={mechanic2Image}
-                alt="Second slide"
-              />
-
-              <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={mechanic3Image}
-                alt="Third slide"
-              />
-
-              <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>
-                  Praesent commodo cursus magna, vel scelerisque nisl
-                  consectetur.
-                </p>
-              </Carousel.Caption>
-            </Carousel.Item>
-          </Carousel>
-        </Col>
-      </Row> */}
 
       <Row className=" pb-md-5 mb-md-5 pt-5 mt-4 d-flex d-md-none">
         <Col
@@ -113,6 +67,8 @@ function Home() {
         </Row>
 
         <Services />
+
+        <Brands />
       </Container>
     </div>
   );
