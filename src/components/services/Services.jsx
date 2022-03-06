@@ -13,7 +13,7 @@ import "./style.scss";
 function Services() {
   return (
     <Fragment>
-      <Row>
+      <Row className="mb-5">
         <Col xs="12 ">
           <h3 className="text-center">Our Services</h3>{" "}
         </Col>

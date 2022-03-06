@@ -1,6 +1,6 @@
 import { Fragment, forwardRef } from "react";
 import { Carousel } from "@trendyol-js/react-carousel";
-
+import { Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 
@@ -46,30 +46,34 @@ const CustomArrow = forwardRef(({ type }, ref) => {
 function Brands() {
   return (
     <Fragment>
-      <h3 className="text-center">Some of the Brands We've worked on.</h3>{" "}
-      <Carousel
-        swiping={true}
-        swipeOn={0.1}
-        show={3.5}
-        slide={2}
-        transition={0.5}
-        useArrowKeys={true}
-        leftArrow={<CustomArrow type="left" />}
-        rightArrow={<CustomArrow type="right" />}
-      >
-        <img src={bmwImage} className="img-fluid" alt="" />
-        <img src={hondaImage} className="img-fluid" alt="" />
-        <img src={jeepImage} className="img-fluid" alt="" />
-        <img src={kiaImage} className="img-fluid" alt="" />
-        <img src={landroverImage} className="img-fluid" alt="" />
-        <img src={mercedesImage} className="img-fluid" alt="" />
-        <img src={toyotaImage} className="img-fluid" alt="" />
-        <img src={mitsubishiImage} className="img-fluid" alt="" />
-        <img src={peagoutImage} className="img-fluid" alt="" />
-        <img src={chevroletImage} className="img-fluid" alt="" />
-        <img src={nissanImage} className="img-fluid" alt="" />
-        <img src={volkswagenImage} className="img-fluid" alt="" />
-      </Carousel>
+      <Row className="mb-5">
+        <Col xs="12">
+          <h3 className="text-center">Some of the Brands We've worked on.</h3>{" "}
+          <Carousel
+            swiping={true}
+            swipeOn={0.1}
+            show={3.5}
+            slide={2}
+            transition={0.5}
+            useArrowKeys={true}
+            leftArrow={<CustomArrow type="left" />}
+            rightArrow={<CustomArrow type="right" />}
+          >
+            <img src={bmwImage} className="img-fluid" alt="" />
+            <img src={hondaImage} className="img-fluid" alt="" />
+            <img src={jeepImage} className="img-fluid" alt="" />
+            <img src={kiaImage} className="img-fluid" alt="" />
+            <img src={landroverImage} className="img-fluid" alt="" />
+            <img src={mercedesImage} className="img-fluid" alt="" />
+            <img src={toyotaImage} className="img-fluid" alt="" />
+            <img src={mitsubishiImage} className="img-fluid" alt="" />
+            <img src={peagoutImage} className="img-fluid" alt="" />
+            <img src={chevroletImage} className="img-fluid" alt="" />
+            <img src={nissanImage} className="img-fluid" alt="" />
+            <img src={volkswagenImage} className="img-fluid" alt="" />
+          </Carousel>
+        </Col>
+      </Row>
     </Fragment>
   );
 }

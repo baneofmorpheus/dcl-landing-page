@@ -1,6 +1,7 @@
 import DclNavbar from "../../components/DclNavbar.jsx";
 import Services from "../../components/services/Services.jsx";
 import Brands from "../../components/brands/Brands.jsx";
+import About from "../../components/about/About.jsx";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import heroImage from "../../assets/images/vehicle.png";
 
@@ -69,6 +70,9 @@ function Home() {
         <Services />
 
         <Brands />
+      </Container>
+      <Container fluid={true} className="">
+        <About />
       </Container>
     </div>
   );
