@@ -2,6 +2,8 @@ import DclNavbar from "../../components/DclNavbar.jsx";
 import Services from "../../components/services/Services.jsx";
 import Brands from "../../components/brands/Brands.jsx";
 import About from "../../components/about/About.jsx";
+import Contact from "../../components/contact/Contact.jsx";
+import Footer from "../../components/footer/Footer.jsx";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import heroImage from "../../assets/images/vehicle.png";
 
@@ -9,6 +11,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 
 import "./style.scss";
 
+// #TODO work on mobile view and start arranging animation
 function Home() {
   return (
     <div className="App">
@@ -22,7 +25,7 @@ function Home() {
           className="mt-lg--5 mb-md-5  pb-5 pe-0 ps-0"
         >
           <div id="hero-content">
-            <h1 className="mb-4">Your One Stop Automobile Shop</h1>
+            <h1 className="mb-4 mt-5 md-mt-0">Your One Stop Automobile Shop</h1>
 
             <p className="mb-4">
               Reliable,Efficient and Proffesional Automobile Diagnostics and
@@ -74,6 +77,10 @@ function Home() {
       <Container fluid={true} className="">
         <About />
       </Container>
+      <Container>
+        <Contact />
+      </Container>
+      <Footer />
     </div>
   );
 }

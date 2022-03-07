@@ -8,10 +8,10 @@ function About() {
   return (
     <Fragment>
       <Row className="mt-5 bg-dark pt-5 pb-5">
-        <Col xs="12 " md="6">
+        <Col xs="12 " className="mt-5 mb-5" md="6">
           <img src={acuraImage} className="img-fluid about-img" alt="" />
         </Col>
-        <Col xs="12 " md="6">
+        <Col className="mt-5 mb-5" xs="12 " md="6">
           <h5 className="text-center text-white mb-3">About Us</h5>
           <p className="text-white">
             As an independent garage established in 2009, Digital Carsolutions

@@ -1,0 +1,26 @@
+.dcl-contact {
+  .form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgb(0 0 0 / 25%);
+    border: none;
+  }
+  input.form-control {
+    height: 50px;
+  }
+
+  ::-webkit-input-placeholder {
+    /* Edge */
+    color: white !important;
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer */
+    color: white !important;
+  }
+
+  ::placeholder {
+    color: white !important;
+  }
+}
+.dcl-icon {
+  font-size: 1.3rem;
+}
