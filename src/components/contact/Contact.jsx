@@ -8,8 +8,8 @@ import "./style.scss";
 function Contact() {
   return (
     <Fragment>
-      <Row className="mt-5 mb-3 dcl-contact align-items-center  pt-5 pb-5">
-        <Col xs="12 " md="6">
+      <Row className="mt-0 md-mt-5 mb-3 dcl-contact align-items-center  pt-5 pb-5">
+        <Col className="mb-5 md-mb-0" md="6">
           <h5 className="text-center text-dark mb-4">Contact Us</h5>
 
           <Form>

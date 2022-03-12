@@ -1,7 +1,5 @@
 #hero-section {
-  background-position: right;
-  background-repeat: no-repeat;
-  padding-top: 8rem !important;
+  min-height: 100vh;
 }
 #call-to-action {
   background-image: url("../../assets/images/vehicle.png");
@@ -12,17 +10,56 @@
     color: white !important;
   }
 }
-@media only screen and (max-width: 1024px) {
-  #hero-section {
-    padding-top: 6rem !important;
+#custom-card-parent {
+  left: 50%;
+  width: 22rem;
+  transform: translateX(-50%);
+}
+.custom-card {
+  transform: rotate3d(1, 1, 1, 10deg);
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 22rem;
+
+  height: 31rem;
+  border-radius: 0.6rem;
+
+  div {
+    height: 83%;
   }
+}
+.custom-card:nth-child(2) {
+  transform: rotate3d(1, 1, 1, -17deg);
+}
+@media only screen and (max-width: 1024px) {
 }
 
 @media only screen and (max-width: 768px) {
+  .custom-card,
+  #custom-card-parent {
+    width: 54vw;
+  }
   #hero-content {
     background-color: rgba(0, 0, 0, 0.62);
 
     padding: 2.5rem;
     min-height: 404px;
+  }
+
+  #hero-section {
+    min-height: 120vh;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #hero-section {
+    min-height: 110vh;
+  }
+  .custom-card,
+  #custom-card-parent {
+    width: 72vw;
   }
 }

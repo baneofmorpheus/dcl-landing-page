@@ -1,5 +1,6 @@
 import { Container, Navbar, Nav } from "react-bootstrap";
-import logo from "../assets/images/dcl-logo.png";
+import logo from "../../assets/images/dcl-logo.png";
+import "./style.scss";
 
 function DclNavbar() {
   return (
@@ -7,12 +8,7 @@ function DclNavbar() {
       <Navbar fixed="top" className="pt-2 pb-2" bg="dark" expand="lg">
         <Container>
           <Navbar.Brand href="#home">
-            <img
-              style={{ height: "60px" }}
-              className="img-fluid"
-              src={logo}
-              alt=""
-            />
+            <img id="logo-img" className="img-fluid" src={logo} alt="" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
