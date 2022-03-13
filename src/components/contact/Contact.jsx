@@ -1,17 +1,22 @@
-import { Row, Col, Form, Button } from "react-bootstrap";
-import { Fragment } from "react";
+import { Row, Col, Form, Button, Spinner } from "react-bootstrap";
+import { Fragment, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
+import { Toast } from "primereact/toast";
 
 import "./style.scss";
 
+// #TODO  integrate email sending functionality
+
 function Contact() {
+  const toast = useRef(null);
+
   return (
     <Fragment>
       <Row className="mt-0 md-mt-5 mb-3 dcl-contact align-items-center  pt-5 pb-5">
         <Col className="mb-5 md-mb-0" md="6">
           <h5 className="text-center text-dark mb-4">Contact Us</h5>
-
+          <Toast ref={toast} />
           <Form>
             <Form.Group className="mb-3">
               <Form.Control
@@ -44,7 +49,24 @@ function Contact() {
             </Form.Group>
 
             <div className="text-center">
-              <Button className=" w-50" variant="dark" type="submit">
+              <Button
+                onClick={() => {
+                  toast.current.show({
+                    severity: "success",
+                    summary: "Success Message",
+                    detail: "Order submitted",
+                  });
+                }}
+                className=" w-50"
+                variant="dark"
+                type="button"
+              >
+                <Spinner
+                  size="sm"
+                  className="me-2"
+                  variant="light"
+                  animation="border"
+                />{" "}
                 Submit
               </Button>
             </div>

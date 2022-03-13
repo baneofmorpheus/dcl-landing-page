@@ -11,7 +11,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 
 import "./style.scss";
 
-// #TODO work on mobile view and start arranging animation
+// #TODO start arranging animation
 function Home() {
   return (
     <div className="App">
@@ -21,7 +21,7 @@ function Home() {
         <Container className="pt-0 pt-md-5">
           <Row className="pt-5 pb-md-5  mb-md-5">
             <Col xs="12" lg="6" className="mt-lg--5 mb-md-5 pt-5 pb-5">
-              <div class="text-white text-center">
+              <div className="text-white text-center text-md-start">
                 <h1 className="mb-4">
                   Repair or service your vehicles without stress.
                 </h1>
@@ -37,27 +37,22 @@ function Home() {
               </div>
             </Col>
             <Col className=" " xs="12" lg="6">
-              {/* <div>
-              </div> */}
-
-              {/* <div " class=""> */}
-              <div id="custom-card-parent" class="position-relative">
-                <div class="p-3 position-absolute me-auto ms-auto d-flex align-items-center custom-card">
-                  <div class=" d-flex align-items-center   p-1">
+              <div id="custom-card-parent" className="position-relative">
+                <div className="p-3 position-absolute me-auto ms-auto d-flex align-items-center custom-card">
+                  <div className=" d-flex align-items-center   p-1">
                     <img src={heroImage} alt="" className="img-fluid w-100" />
                   </div>
                 </div>
-                <div class=" p-3 position-absolute me-auto ms-auto d-flex align-items-center custom-card">
-                  <div class=" d-flex align-items-center   p-1">
+                <div className=" p-3 position-absolute me-auto ms-auto d-flex align-items-center custom-card">
+                  <div className=" d-flex align-items-center   p-1">
                     <img src={heroImage} alt="" className="img-fluid w-100" />
                   </div>
                 </div>
-                <div class=" p-3 position-absolute  me-auto ms-auto d-flex align-items-center custom-card">
-                  <div class=" d-flex align-items-center  p-1">
+                <div className=" p-3 position-absolute  me-auto ms-auto d-flex align-items-center custom-card">
+                  <div className=" d-flex align-items-center  p-1">
                     <img src={heroImage} alt="" className="img-fluid w-100" />
                   </div>
                 </div>
-                {/* </div> */}
               </div>
             </Col>
           </Row>

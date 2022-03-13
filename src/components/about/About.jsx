@@ -13,7 +13,7 @@ function About() {
           md={{ order: 1, span: "6" }}
           className="mt-5 mb-5"
         >
-          <div class="d-flex align-items-center h-100">
+          <div className="d-flex align-items-center h-100">
             <img src={acuraImage} className="img-fluid about-img" alt="" />
           </div>
         </Col>
