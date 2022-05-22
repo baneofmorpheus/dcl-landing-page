@@ -1,7 +1,7 @@
 import { Container, Navbar } from 'react-bootstrap';
 import logo from '../../assets/images/dcl-logo.png';
 import './style.scss';
-import MenuToggle from '../lottie/MenuToggle.jsx';
+import { MenuOpen } from './Menu.jsx';
 
 function DclNavbar() {
   return (
@@ -12,24 +12,7 @@ function DclNavbar() {
             <img id='logo-img' className='img-fluid' src={logo} alt='' />
           </Navbar.Brand>
 
-          {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
-          {/* <Navbar.Collapse id='basic-navbar-nav'>
-            <Nav className='ms-auto'>
-              <Nav.Link className='text-white me-5' href='#home'>
-                Home
-              </Nav.Link>
-              <Nav.Link className='text-white me-5' href='#home'>
-                Services
-              </Nav.Link>
-              <Nav.Link className='text-white me-5' href='#home'>
-                About
-              </Nav.Link>
-              <Nav.Link className='text-white ' href='#home'>
-                Contact
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse> */}
-          <MenuToggle />
+          <MenuOpen />
         </Container>
       </Navbar>
     </div>
