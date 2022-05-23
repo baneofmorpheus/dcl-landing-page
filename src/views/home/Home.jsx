@@ -23,7 +23,7 @@ function Home() {
           <MenuContent />
         </div>
         <div id='hero-section' className='bg-dark pt-5 pb-5 mb-md-3 mb-5'>
-          <Container className='pt-0 pt-md-5'>
+          <Container id='home' className='pt-0 pt-md-5'>
             <Row className='pt-5 pb-md-5  mb-md-5'>
               <Col xs='12' lg='6' className='mt-lg--5 mb-md-5 pt-5 pb-5'>
                 <div className='text-white text-center text-md-start'>
@@ -36,9 +36,12 @@ function Home() {
                     and Repair Center.
                   </p>
 
-                  <Button className='d-none d-md-inline-block' variant='light'>
+                  <a
+                    className='d-none btn d-md-inline-block btn-light'
+                    href='#contact-us'
+                  >
                     Book an Appointment now.
-                  </Button>
+                  </a>
                 </div>
               </Col>
               <Col className=' ' xs='12' lg='6'>

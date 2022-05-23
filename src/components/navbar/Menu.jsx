@@ -4,12 +4,8 @@ import Lottie from 'react-lottie';
 import * as cubeLottie from './lottie/cube.json';
 import * as closeLottie from './lottie/close.json';
 import { Container, Navbar } from 'react-bootstrap';
-import {
-  Transition,
-  // CSSTransition,
-  // SwitchTransition,
-  // TransitionGroup,
-} from 'react-transition-group';
+import { Transition } from 'react-transition-group';
+import { Link } from 'react-scroll';
 import './style.scss';
 
 export const MenuClose = () => {
@@ -77,7 +73,12 @@ export const MenuOpen = () => {
 export const MenuContent = () => {
   const [store] = useContext(GlobalContext);
   const nodeRef = useRef(null);
+  const context = useContext(GlobalContext);
+  const dispatch = context[1];
 
+  const handleCloseClick = () => {
+    dispatch({ type: 'TOGGLE_MENU', payload: false });
+  };
   const duration = 800;
   const defaultStyle = {
     transition: `visibility ${duration}ms ease-in-out,opacity ${duration}ms ease-in-out`,
@@ -118,18 +119,51 @@ export const MenuContent = () => {
             >
               <MenuClose />
               <div className='d-flex flex-column h-100 align-items-center justify-content-center'>
-                <a className='mb-4' href='#a'>
+                <Link
+                  to='home'
+                  className='mb-4 cursor-pointer'
+                  onClick={handleCloseClick}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
                   Home
-                </a>
-                <a className='mb-4' href='#a'>
+                </Link>
+
+                <Link
+                  to='services'
+                  className='mb-4 cursor-pointer'
+                  onClick={handleCloseClick}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
                   Services
-                </a>
-                <a className='mb-4' href='#a'>
-                  About
-                </a>
-                <a className='mb-4' href='#a'>
+                </Link>
+                <Link
+                  to='contact-us'
+                  className='mb-4 cursor-pointer'
+                  onClick={handleCloseClick}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
                   Contact
-                </a>
+                </Link>
+                <Link
+                  to='about-us'
+                  className='mb-4 cursor-pointer'
+                  onClick={handleCloseClick}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  About
+                </Link>
               </div>
             </div>
           </Container>

@@ -1,8 +1,12 @@
 #hero-section {
   min-height: 100vh;
 }
+
+body {
+  scroll-behavior: smooth;
+}
 #call-to-action {
-  background-image: url("../../assets/images/vehicle.png");
+  background-image: url('../../assets/images/vehicle.png');
   background-size: contain;
   background-repeat: no-repeat;
   p,

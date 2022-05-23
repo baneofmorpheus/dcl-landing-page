@@ -1,29 +1,29 @@
-import { Row, Col } from "react-bootstrap";
-import { Fragment } from "react";
+import { Row, Col } from 'react-bootstrap';
+import { Fragment } from 'react';
 
-import acuraImage from "../../assets/images/acura.png";
-import "./style.scss";
+import acuraImage from '../../assets/images/acura.png';
+import './style.scss';
 
 function About() {
   return (
     <Fragment>
-      <Row className="mt-5 bg-dark pt-5 pb-5">
+      <Row id='about-us' className='mt-5 bg-dark pt-5 pb-5'>
         <Col
-          xs={{ order: 2, span: "12" }}
-          md={{ order: 1, span: "6" }}
-          className="mt-5 mb-5"
+          xs={{ order: 2, span: '12' }}
+          md={{ order: 1, span: '6' }}
+          className='mt-5 mb-5'
         >
-          <div className="d-flex align-items-center h-100">
-            <img src={acuraImage} className="img-fluid about-img" alt="" />
+          <div className='d-flex align-items-center h-100'>
+            <img src={acuraImage} className='img-fluid about-img' alt='' />
           </div>
         </Col>
         <Col
-          xs={{ order: 1, span: "12" }}
-          md={{ order: 2, span: "6" }}
-          className="mt-5 mb-5"
+          xs={{ order: 1, span: '12' }}
+          md={{ order: 2, span: '6' }}
+          className='mt-5 mb-5'
         >
-          <h5 className="text-center text-white mb-3">About Us</h5>
-          <p className="text-white">
+          <h5 className='text-center text-white mb-3'>About Us</h5>
+          <p className='text-white'>
             As an independent garage established in 2009, Digital Carsolutions
             Ltd has built up long-standing relationships with many of its
             customers, through its focus on customer care, professional
