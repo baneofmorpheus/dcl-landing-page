@@ -118,7 +118,10 @@ export const MenuContent = () => {
               id='menu-content'
             >
               <MenuClose />
-              <div className='d-flex flex-column h-100 align-items-center justify-content-center'>
+              <div
+                id='menu-container'
+                className='d-flex flex-column  align-items-center justify-content-center'
+              >
                 <Link
                   to='home'
                   className='mb-4 cursor-pointer'
