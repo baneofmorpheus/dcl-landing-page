@@ -6,7 +6,7 @@ import About from '../../components/about/About.jsx';
 import Contact from '../../components/contact/Contact.jsx';
 import { ContextWrapper } from '../../helpers/GlobalContext.js';
 import Footer from '../../components/footer/Footer.jsx';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import heroImage from '../../assets/images/vehicle.png';
 
 import '@fortawesome/fontawesome-svg-core/styles.css';
